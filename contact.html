@@ -38,12 +38,7 @@
 				<div class="col-lg-2 col-md-4">
 					
 				</div>
-				<div class="col-lg-10 col-md-8 text-center text-lg-right text-md-right">
-					<div class="header-top-info">
-						<a href="tel:+44-7531-713555">Call Us : <span>07531713555</span></a>
-						<a href="admin@zetawebs.com" ><i class="fa fa-envelope mr-2"></i><span>admin@zetawebs.com</span></a>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -107,30 +102,32 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12">
-                 <form id="contact-form" class="contact__form" method="post" action="mail.php">
+                 <form target="_blank" action="https://formsubmit.co/admin@zetawebs.com" method="POST" class="email-form">
                  <!-- form message -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                                Your message was sent successfully.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end message -->
-                    <span class="text-color">Send a message</span>
-                    <h3 class="text-md mb-4">Contact Form</h3>
-                    <div class="form-group">
-                        <input name="name" type="text" class="form-control" placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <input name="email" type="email" class="form-control" placeholder="Email Address">
-                    </div>
-                    <div class="form-group-2 mb-4">
-                        <textarea name="message" class="form-control" rows="4" placeholder="Your Message"></textarea>
-                    </div>
-                    <button class="btn btn-main" name="submit" type="submit">Send Message</button>
+                 <input type="text" placeholder="Full Name" name="name" required/>
+                 <input type="email" placeholder="Email Address" required name="email"/>
+                 <textarea placeholder="Your message here." name="message"></textarea>
+                 <input type="submit"/>
+                   
+                    
                 </form>
             </div>
+          
+          <script>
+              // JavaScript to display the "Email Sent!" popup and clear the input fields
+              const contactForm = document.getElementById("contact-form");
+              const fullNameInput = document.querySelector('input[name="name"]');
+              const emailInput = document.querySelector('input[name="email"]');
+              const messageTextarea = document.querySelector('textarea[name="message"]');
+          
+              contactForm.addEventListener("submit", function (e) {
+          
+                  // Clear input fields
+                  fullNameInput.value = "";
+                  emailInput.value = "";
+                  messageTextarea.value = "";
+              });
+          </script>
 
             <div class="col-lg-5 col-sm-12">
                 <div class="contact-content pl-lg-5 mt-5 mt-lg-0">
@@ -154,9 +151,7 @@
     </div>
 </section>
 
-<div class="google-map">
-    <div id="map"></div>
-</div>
+
 <!-- footer Start -->
 <footer class="footer section">
 	<div class="container">
@@ -166,10 +161,9 @@
 					<h4 class="text-capitalize mb-4">Company</h4>
 
 					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#">Terms & Conditions</a></li>
-						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="./terms-cond.html">Terms & Conditions</a></li>
+						<li><a href="./privacy.html">Privacy Policy</a></li>
 						<li><a href="#">Support</a></li>
-						<li><a href="#">FAQ</a></li>
 					</ul>
 				</div>
 			</div>
@@ -178,10 +172,9 @@
 					<h4 class="text-capitalize mb-4">Quick Links</h4>
 
 					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="./about.html">About</a></li>
+						<li><a href="./service.html">Services</a></li>
+						<li><a href="./contact.html">Contact</a></li>
 					</ul>
 				</div>
 			</div>

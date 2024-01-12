@@ -450,6 +450,7 @@ a:focus {
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
+  font-size: x-large;
 }
 
 .navbar-brand span {
@@ -780,6 +781,52 @@ ul.dropdown-menu li {
   color: #2772db;
   opacity: 0;
   transition: all .35s ease;
+}
+
+.email-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Make all input fields look the same with a slight gap in between */
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block; /* Display each input on a new line */
+  margin-bottom: 20px; /* Add a slight gap between input fields */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
 }
 
 .portflio-item:hover .overlay-item {
